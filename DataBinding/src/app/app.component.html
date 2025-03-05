@@ -1,7 +1,9 @@
-<div>
+<div id="main">
+
+  <h3>Hello {{userName}} from BridgeLabz</h3>
   <img [src]="logoPath" alt="BridgeLabz Logo" width="200" (click)="openBridgeLabzSite()" style="cursor: pointer;">
-
-  <h3>Hello {{userName}} ,  from BridgeLabz </h3>
-
-  <input type="text" [(ngModel)]="userName" placeholder="Enter your Name"/>
+  <input type="text" [(ngModel)]="userName" (input)="validateUserName()" placeholder="Enter your Name"/>
+  <div style="color: red;" *ngIf="errorMessage">
+    {{errorMessage}}
+  </div>
 </div>

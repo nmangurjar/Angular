@@ -1,11 +1,24 @@
 h3{
-     font-size: 35px;
+    position: absolute;
+    left: 33%;
+     font-size: 45px;
+     font-weight: 500;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#main{
 
- display: flex;
- align-items: center;
- justify-content: center;
-   
+img{
+    position: absolute;
+    left: 36%;
+    top: 18%;
+  height: 370px;
+  width: 350px;
 }
+input{
+    position: absolute;
+    left: 42%;
+    top: 70%;  
+}
+.error {
+    color: red;
+    font-weight: bold;
+  }
