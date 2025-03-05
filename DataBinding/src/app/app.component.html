@@ -1,6 +1,7 @@
-
-<div id="main">
- 
+<div>
   <img [src]="logoPath" alt="BridgeLabz Logo" width="200" (click)="openBridgeLabzSite()" style="cursor: pointer;">
-  <h3>Hello from BridgeLabz!</h3>
+
+  <h3>Hello {{userName}} ,  from BridgeLabz </h3>
+
+  <input type="text" [(ngModel)]="userName" placeholder="Enter your Name"/>
 </div>
